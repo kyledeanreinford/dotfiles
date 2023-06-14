@@ -3,7 +3,6 @@ echo "Running Personalized Script"
 # List of apps to install
 declare -a apps=( \
     1password-cli \
-    defaultbrowser
 )
 
 for package in "${apps[@]}"

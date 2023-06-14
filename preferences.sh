@@ -31,8 +31,7 @@ declare -a apps=( \
 
 for package in "${apps[@]}"
 do
-  echo "Installing ${package}"
-  open ${package}.app
+  open /Applications/${package}.app
 done
 
 # add permanent dock items

@@ -14,9 +14,9 @@ defaults write com.apple.screencapture location -string "$HOME/Desktop"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Add folders to sidebar
-mysides add Desktop
-mysides add Documents
-mysides add Downloads
+mysides add Desktop file:///Users/$accountname/Desktop
+mysides add Documents file:///Users/$accountname/Documents
+mysides add Downloads file:///Users/$accountname/Downloads
 
 # List of apps to open
 declare -a apps=( \

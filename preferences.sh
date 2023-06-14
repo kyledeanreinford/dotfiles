@@ -1,3 +1,5 @@
+echo "Loading personal preferences from dotfile"
+
 # set key repeat speed
 defaults write NSGlobalDomain KeyRepeat -int 4
 

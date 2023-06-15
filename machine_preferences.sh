@@ -19,14 +19,15 @@ mysides add Documents file:///Users/$accountname/Documents
 mysides add Downloads file:///Users/$accountname/Downloads
 
 # List of apps to open
+echo "Opening apps"
 declare -a apps=( \
-    1password \
+    1Password \
     Rectangle \
     NordVPN \
     Notion \
     Slack \
-    Pastebot \ 
-    Dropbox
+    Dropbox \
+    Pastebot
 )
 
 for package in "${apps[@]}"
@@ -35,8 +36,10 @@ do
 done
 
 # add permanent dock items
+echo "Clearing dock"
 defaults write com.apple.dock persistent-apps -array
 
+echo "Adding preferred dock applications"
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>Applications/Google Chrome.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/IntelliJ IDEA.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
@@ -53,4 +56,5 @@ do
   defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>'Applications/$item'</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 done; killall Dock
 
+echo "Creating dev directory"
 mkdir ~/Dev

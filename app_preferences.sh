@@ -11,6 +11,8 @@ do
   brew install ${package}
 done
 
+brew tap microsoft/git
+
 # List of trusted cask apps to install
 declare -a caskApps=( \
     spotify \
@@ -18,6 +20,7 @@ declare -a caskApps=( \
     dropbox \
     notion \
     nordvpn \
+    git-credential-manager-core \
     adobe-creative-cloud \
     warp
 )

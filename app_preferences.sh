@@ -20,7 +20,7 @@ declare -a caskApps=( \
     dropbox \
     notion \
     nordvpn \
-    git-credential-manager-core \
+    git-credential-manager \
     adobe-creative-cloud \
     warp
 )

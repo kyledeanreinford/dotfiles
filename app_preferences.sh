@@ -21,6 +21,7 @@ declare -a caskApps=( \
     notion \
     nordvpn \
     todoist \
+    postman \
     git-credential-manager \
     adobe-creative-cloud \
     warp

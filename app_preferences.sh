@@ -20,6 +20,7 @@ declare -a caskApps=( \
     dropbox \
     notion \
     nordvpn \
+    todoist \
     git-credential-manager \
     adobe-creative-cloud \
     warp
@@ -34,7 +35,6 @@ done
 
 # List of apps to remove
 declare -a toRemove=( \
-    sublime-text \
     
 )
 
